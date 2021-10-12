@@ -1,0 +1,13 @@
+.item {
+    text-decoration: none;
+    color: black;
+    transition: all .5s ease-in-out;
+    font-weight: bold;
+    &:hover {
+        color: rgb(161, 161, 161);
+    }
+}
+
+.icons {
+    width: 25px;
+}
