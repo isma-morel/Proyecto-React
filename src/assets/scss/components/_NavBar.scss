@@ -1,0 +1,53 @@
+.header-custom {
+    z-index: 9999;
+    background-color: nth($colors , 1 );
+    .logo-custom {
+        font-family: $fontFamily;
+        font-weight: bold;
+        text-decoration: none;
+        color: nth($colors , 2 );
+    }
+    .item-custom {
+        transition: .3s ease all;
+        position: relative;
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            
+        }
+        .nav-link {
+            padding: 10px 30px;
+            font-size: 1rem;
+            font-family: $fontFamily;
+            color: nth($colors , 3 );
+            text-align: center;
+            transition: .3s ease all;
+            &:hover {
+                color: black;
+            }
+        }
+    }
+    .widgets {
+        .container-cart {
+            color: nth($colors , 3 );
+            margin-left: 15px;
+            cursor: pointer;
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+        .container-login {
+            margin-left: 15px;
+            margin-right: 10px;
+            color: nth($colors , 3 );
+            cursor: pointer;
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}

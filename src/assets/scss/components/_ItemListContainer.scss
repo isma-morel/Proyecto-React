@@ -1,0 +1,15 @@
+.product-section {
+    .itemlista-container {
+        .product-tittle {
+            display: inline;
+            cursor: pointer;
+            font-family: $fontFamily;
+            font-weight: bold;
+            transition: .3s ease all;
+            &:hover {
+                color: nth($colors , 3 );
+                background-color: black;
+            }
+        }
+    }
+}
