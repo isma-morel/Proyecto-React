@@ -44,6 +44,10 @@
   margin-right: 10px;
   color: #ffff;
   cursor: pointer;
+  transition: 0.3s ease all;
+}
+.header-custom .widgets .container-login:hover {
+  color: black;
 }
 .header-custom .widgets .container-login svg {
   width: 24px;

@@ -44,6 +44,10 @@
             margin-right: 10px;
             color: nth($colors , 3 );
             cursor: pointer;
+            transition: .3s ease all;
+            &:hover {
+                color: black;
+            }
             svg {
                 width: 24px;
                 height: 24px;

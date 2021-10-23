@@ -2,7 +2,7 @@ export const ItemListContainer = (greeting) => {
     return(
         <section className="product-section">
             <div className="itemlista-container">
-                <p className="product-tittle" onClick={greeting.click}>Producto {greeting.num}</p>
+                <h1 className="product-tittle" onClick={greeting.click}>Producto {greeting.num}</h1>
             </div>
         </section>
     )
