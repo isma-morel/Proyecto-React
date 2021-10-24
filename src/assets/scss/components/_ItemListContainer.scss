@@ -1,5 +1,9 @@
 .product-section {
     .itemlista-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         .product-tittle {
             display: inline;
             cursor: pointer;
@@ -9,6 +13,94 @@
             &:hover {
                 color: nth($colors , 3 );
                 background-color: black;
+            }
+        }
+        .name-product {
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        .stock {
+            font-size: 1rem;
+        }
+        .container-btns {
+            .btn-add, .btn-decrease {
+                font-size: 20px;
+                outline: none;
+                border: none;
+                margin-right: 30px;
+                margin-left: 30px;
+                position: relative;
+                width: 30px;
+                height: 30px;
+                background: #141414;
+                color: #fff;
+                font-family: $fontFamily;
+                font-weight: 500;
+                border-radius: 5px;
+                transition: .4s ease all;
+                overflow: hidden;
+                & span {
+                    position: inherit;
+                    z-index: 2;
+                }
+                &::after {
+                    opacity: 0;
+                    content: "";
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 5px;
+                    background: nth($colors , 1 );
+                    position: absolute;
+                    left: -30px;
+                    top: 0px;
+                    transition: .4s ease all;
+                }
+                &:hover::after {
+                    left: -1px;
+                    top: -1px;
+                    opacity: 1;
+                }
+            }
+        }
+        .btn-cart {
+            font-size: 1rem;
+            outline: none;
+            border: none;
+            background: none;
+            margin-top: 30px;
+            position: relative;
+            width: 200px;
+            height: 30px;
+            background: #141414;
+            color: #fff;
+            font-family: $fontFamily;
+            font-weight: 500;
+            word-wrap: normal;
+            border-radius: 5px;
+            text-align: center;
+            transition: .3s ease all;
+            overflow: hidden;
+            & {
+                span {
+                    position: inherit;
+                    z-index: 2;
+                }
+            }
+            &::after {
+                content: "";
+                width: 5%;
+                height: 20%;
+                top: 45%;
+                right: 48%;
+                border-radius: 100%;
+                background: nth($colors , 1 );
+                position: absolute;
+                opacity: 0;
+                transition: .4s ease-in-out transform, .4s ease-in-out opacity;
+            }
+            &:hover::after {
+                transform: scale(25, 10);
+                opacity: 1;
             }
         }
     }
