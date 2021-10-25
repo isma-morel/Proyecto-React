@@ -1,13 +1,23 @@
 import { Item } from "../Item/Item";
+//PRODUCTS QUE VIENE DE LIST CONTAINER SE LA ASIGNO A UN METODO DE ARRAYS
+//products.map() QUE LLEVA UNA ARROW FUNCTION
+//QUE RENDERIZA MI COMPONENTE ITEM CON TODOS LOS DATOS DE CADA PRODUCTO
 
-export const ItemList = ({data}) => {
+
+export const ItemList = ({products}) => {
     return (
         <>
-            <section className="item-list-container d-flex">
-                {data && data.map(({id, src, name, price, stock}) => {
-                    return <Item key={id} src={src} name={name} price={price} stock={stock}></Item>
-                })}
+            <section className="section-catalogo">
+                <h2 className="catalogo-tittle">Our Watches</h2>
+                <div className="catalogo-container d-flex">
+                    {products && products.map(({id, src, name, price, stock}) => {
+                        return <Item key={id} src={src} name={name} price={price} stock={stock}></Item>
+                    })}
+                </div>
             </section>
-        </>
+        </> //EN PRODUCTS && PRODUCTS.MAP
+            //ESTOY INDICANDO QUE SI PRODUCTS ES FALSY QUE NO RENDERICE
+            //PRODUCTS.MAP, SI PRODUCTS ES TRUESY SE EJECUTARA EL products.map()
+            //POR LO TANTO HABRA UN RENDER DEL CATALOGO
     )
 }

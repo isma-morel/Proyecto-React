@@ -214,4 +214,123 @@ html {
   opacity: 1;
 }
 
+.section-catalogo {
+  text-align: center;
+  background-color: #c1dcf9;
+  padding: 45px 0;
+}
+.section-catalogo .catalogo-tittle {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #ffff;
+  cursor: pointer;
+}
+.section-catalogo .catalogo-container {
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item-brand {
+  width: 265px;
+  margin: 15px 20px;
+}
+.item-brand .img-container {
+  position: relative;
+  transition: 0.4s ease all;
+  z-index: 1;
+  cursor: pointer;
+  overflow: hidden;
+}
+.item-brand .img-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #191919;
+  position: absolute;
+  opacity: 0;
+  transition: 0.4s ease all;
+  left: 0;
+  bottom: -100%;
+  z-index: 2;
+}
+.item-brand .img-container:hover::before {
+  opacity: 0.8;
+  bottom: 0;
+}
+.item-brand .img-container:hover .item-hover {
+  bottom: 50%;
+  opacity: 1;
+}
+.item-brand .img-container img {
+  width: 100%;
+}
+.item-brand .img-container .item-hover {
+  border: none;
+  background: none;
+  position: absolute;
+  bottom: -50%;
+  left: 30%;
+  z-index: 3;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #ffff;
+  border: 1px solid #999999;
+  box-shadow: none;
+  transition: 0.2s ease all;
+  overflow: hidden;
+  opacity: 0;
+}
+.item-brand .img-container .item-hover span {
+  position: relative;
+  z-index: 10;
+}
+.item-brand .img-container .item-hover::after {
+  content: "";
+  position: inherit;
+  z-index: 4;
+  background-color: #999999;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: -100%;
+  opacity: 0;
+  transition: 0.4s ease all;
+}
+.item-brand .img-container .item-hover:hover::after {
+  opacity: 0.8;
+  right: 0;
+}
+.item-brand .img-container .item-hover:hover {
+  color: #ffff;
+  border: 1px solid #535353;
+}
+.item-brand .text-container {
+  padding-top: 15px;
+  color: #ffff;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+.item-brand .text-container h3 {
+  font-size: 20px;
+}
+.item-brand .text-container p {
+  font-size: 18px;
+  color: #141414;
+  margin-bottom: 0;
+}
+.item-brand .text-container p span {
+  color: #179dfb;
+}
+.item-brand .text-container h4 {
+  font-size: 16px;
+  color: #141414;
+  font-weight: lighter;
+}
+.item-brand .text-container h4 span {
+  color: #999999;
+}
+
 /*# sourceMappingURL=App.css.map */

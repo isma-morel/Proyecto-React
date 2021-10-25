@@ -33,17 +33,26 @@ export const ItemListContainer = ( greeting ) => {
                 console.log(result)
             })
     }, []) //Array vacio, indico que se ejecute solo una vez al renderizar
-
+    //CREO FUNCTION PARA AÑADIR PRODUCTO AL CONTADOR DE ITEMS
     const onAdd = () => {
+        //SI STOCK ES MAYOR QUE 0 LE PERMITO SEGUIR RESTANDOLE CON EL CONTADOR A ESTE MISMO
+        //DE LO CONTRARIO NO HACE NADA
         if(stock > 0) {
+            //STOCK > 0 SUMA A COUNT
             setCount(count + 1)
+            //STOCK > 0 RESTA A STOCK
             setStock(stock -1)
         }
         
     }
+    //CREO FUNCTION PARA REMOVER PRODUCTO DEL CONTADOR DE ITEMS
     const onDecrease = () => {
+        //EMPIEZO EN 1 POR LA RAZON DE QUE ES IMPOSIBLE AÑADIR 0 ITEMS AL CARRITO
+        //SI STOCK ES MAYOR QUE 1 LE PERMITO SEGUIR RESTANDOLE CON EL CONTADOR A ESTE MISMO
         if(count > 1){
+            //COUNT > 1 RESTA A COUNT
             setCount(count - 1) 
+            //COUNT > 1 SUMA A STOCK
             setStock(stock + 1)
         }
     }
@@ -58,7 +67,9 @@ export const ItemListContainer = ( greeting ) => {
                     <ItemCount stock={stock} initial={count} decrease={onDecrease} add={onAdd}/>
                 </div>
             </section>
-            <ItemList data={products}/>
-        </>
+            <ItemList products={products}/>
+        </> //AL COMPONENTE ITEMLIST LE ASIGNO EL VALOR DE PRODUCTS COMO PROPS
+            // DESPUES DE 2 SEG SE RENDERIZARA DE NUEVO 
+            //CON UN NUEVO VALOR(EL ARRAY CON LOS DATOS DEL CATALOGO)
     )
 }

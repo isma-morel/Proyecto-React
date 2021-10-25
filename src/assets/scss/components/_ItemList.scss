@@ -1,0 +1,17 @@
+.section-catalogo {
+    text-align: center;
+    background-color: nth($colors , 4 );
+    padding: 45px 0;
+    .catalogo-tittle {
+        font-family: $fontFamily;
+        font-weight: bold;
+        color: nth($colors , 3 );
+        cursor: pointer;
+    }
+    .catalogo-container {
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
