@@ -2,8 +2,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useState } from 'react';
 import './App.css';
-import { ItemListContainer } from './assets/components/main/itemlistcontainer/ItemListContainer';
-import { NavBar } from './assets/components/navbar/NavBar';
+import { ItemListContainer } from './assets/components/containers/ItemListContainer/ItemListContainer';
+import { NavBar } from './assets/components/NavBar/NavBar';
 
 
 function App() {

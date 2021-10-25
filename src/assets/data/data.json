@@ -1,0 +1,39 @@
+{
+    "customData": [
+        {
+            "id": "1",
+            "src": "https://i.ibb.co/F4d709v/item-1.jpg",
+            "name": "Life Saver Watch 4.0",
+            "price": "40",
+            "stock": "20"
+        },
+        {
+            "id": "2",
+            "src": "https://i.ibb.co/NpncqGj/item-2.jpg",
+            "name": "Reloj Panerai Luminor",
+            "price": "50",
+            "stock": "11"
+        },
+        {
+            "id": "3",
+            "src": "https://i.ibb.co/82v5Q6L/item-3.jpg",
+            "name": "Seiko 5 Snk 809",
+            "price": "60",
+            "stock": "5"
+        },
+        {
+            "id": "4",
+            "src": "https://i.ibb.co/YtxqZ42/item-4.jpg",
+            "name": "The Avalon 2",
+            "price": "70",
+            "stock": "15"
+        },
+        {
+            "id": "5",
+            "src": "https://i.ibb.co/BzmM0tn/item-5.jpg",
+            "name": "Seiko Astron",
+            "price": "80",
+            "stock": "3"
+        }
+    ]
+}

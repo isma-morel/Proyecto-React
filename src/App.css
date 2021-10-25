@@ -78,6 +78,9 @@ html {
   left: 0;
   opacity: 1;
 }
+.header-custom .widgets {
+  margin-top: -15px;
+}
 .header-custom .widgets .container-cart {
   color: #ffff;
   margin-left: 15px;
