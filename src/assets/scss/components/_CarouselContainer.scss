@@ -1,0 +1,8 @@
+.carousel-container {
+    height: 85vh;
+    width: 100vw;
+    background-color: nth($colors, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
